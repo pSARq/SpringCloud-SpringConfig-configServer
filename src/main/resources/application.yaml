@@ -1,0 +1,13 @@
+server:
+  port: 8888  # puerto convencional en donde corre config server
+
+spring:
+  application:
+    name: configServer
+  cloud:
+    config:
+      server:
+        git:
+#          uri: https://github.com/mi-usuario/mi-config-repo # url del repositorio donde estan los archivos de configuracion. Este servidor y el de los archivos van en diferentes repositorios
+          uri: https://github.com/pSARq/SpringCloud-SpringConfig-configFiles
+          default-label: main # nombre de la rama en la que debe de buscar los archivos de configuracion
