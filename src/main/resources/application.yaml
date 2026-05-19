@@ -11,3 +11,4 @@ spring:
 #          uri: https://github.com/mi-usuario/mi-config-repo # url del repositorio donde estan los archivos de configuracion. Este servidor y el de los archivos van en diferentes repositorios
           uri: https://github.com/pSARq/SpringCloud-SpringConfig-configFiles
           default-label: main # nombre de la rama en la que debe de buscar los archivos de configuracion
+          search-paths: config-server # No es obligatorio, pero se puede usar para indicar una carpeta dentro del repositorio donde se encuentran los archivos de configuracion. Si no se indica, el servidor buscara los archivos en la raiz del repositorio
